@@ -9,24 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
-var header_bar_component_1 = require('./header-bar/header-bar.component');
-var AppModule = (function () {
-    function AppModule() {
+var HeaderBar = (function () {
+    function HeaderBar() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [
-                app_component_1.AppComponent,
-                header_bar_component_1.HeaderBar
-            ],
-            bootstrap: [app_component_1.AppComponent]
+    HeaderBar = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'header-bar',
+            templateUrl: './header-bar.component.html',
+            styleUrls: ['./header-bar.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], HeaderBar);
+    return HeaderBar;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.HeaderBar = HeaderBar;
+//# sourceMappingURL=header-bar.component.js.map

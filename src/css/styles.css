@@ -1,1 +1,10 @@
+.nav-ul {
+    margin-top: 20px;
+}
 
+.nav-ul li {
+    display: inline;
+    margin-right: 10px;
+    width: 30%;
+    font-size: 20px;
+}

@@ -6,5 +6,15 @@
     display: inline;
     margin-right: 10px;
     width: 30%;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.sub-nav li {
+    display: inline;
+    width: 30%;
+    margin-right: 10px;
+}
+
+.dropdown {
+    display: inline-block;
 }

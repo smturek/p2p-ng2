@@ -2,16 +2,40 @@
     <div class="col-md-3">
         <h2>Parents to Parents</h2>
     </div>
-    <div class="col-md-4 col-md-offset-5">
+    <div class="col-md-5 col-md-offset-4">
         <ul class="nav-ul">
             <li>
-                <a href="#">Mental/Brain Disorders</a>
+                <a href="#" (click)="setTab('disorders')">Mental/Brain Disorders</a>
             </li>
             <li>
                 <a href="#">Therapies</a>
             </li>
             <li>
                 <a href="#">About Us</a>
+            </li>
+        </ul>
+        <ul class="sub-nav">
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Adults
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Disorder #1</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Children
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Disorder #1</a></li>
+                    </ul>
+                </div>
             </li>
         </ul>
     </div>

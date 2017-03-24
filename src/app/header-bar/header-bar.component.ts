@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
     styleUrls: ['./header-bar.component.css']
 })
 
-export class HeaderBar {}
+export class HeaderBar {
+    tab = "disorders"
+
+    setTab(tab: string): void {
+        this.tab = tab;
+    }
+}

@@ -10,10 +10,19 @@ import { DISORDERS } from '../disorders'
 })
 
 export class HeaderBar {
-    tab = "disorders";
+    tab = "";
+    disorder = "";
     disorders = DISORDERS;
 
     setTab(tab: string): void {
+        if (tab != 'disorders') {
+            this.disorder = "";
+        }
+
         this.tab = tab;
+    }
+
+    setDisorder(disorder: string): void {
+        this.disorder = disorder;
     }
 }

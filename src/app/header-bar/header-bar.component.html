@@ -8,13 +8,13 @@
                 <a href="#" (click)="setTab('disorders')">Mental/Brain Disorders</a>
             </li>
             <li>
-                <a href="#">Therapies</a>
+                <a href="#" (click)="setTab('therapies')">Therapies</a>
             </li>
             <li>
-                <a href="#">About Us</a>
+                <a href="#" (click)="setTab('about')">About Us</a>
             </li>
         </ul>
-        <ul class="sub-nav">
+        <ul class="sub-nav" *ngIf="tab == 'disorders'">
             <li>
                 <div class="dropdown">
                     <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -22,7 +22,7 @@
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li *ngFor="let disorder of disorders.adults"><a href="#">{{disorder.name}}</a></li>
+                        <li *ngFor="let disorder of disorders.adults"><a (click)="setDisorder(disorder.name)">{{disorder.name}}</a></li>
                     </ul>
                 </div>
             </li>
@@ -33,12 +33,14 @@
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li *ngFor="let disorder of disorders.children"><a href="#">{{disorder.name}}</a></li>
+                        <li *ngFor="let disorder of disorders.children"><a (click)="setDisorder(disorder.name)">{{disorder.name}}</a></li>
                     </ul>
                 </div>
             </li>
         </ul>
     </div>
+</div>
 
-    {{DISORDERS}}
+<div class="row" *ngIf="disorder">
+    <h1>Disorder = {{disorder}}</h1>
 </div>

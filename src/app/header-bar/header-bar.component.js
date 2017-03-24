@@ -12,11 +12,18 @@ var core_1 = require('@angular/core');
 var disorders_1 = require('../disorders');
 var HeaderBar = (function () {
     function HeaderBar() {
-        this.tab = "disorders";
+        this.tab = "";
+        this.disorder = "";
         this.disorders = disorders_1.DISORDERS;
     }
     HeaderBar.prototype.setTab = function (tab) {
+        if (tab != 'disorders') {
+            this.disorder = "";
+        }
         this.tab = tab;
+    };
+    HeaderBar.prototype.setDisorder = function (disorder) {
+        this.disorder = disorder;
     };
     HeaderBar = __decorate([
         core_1.Component({

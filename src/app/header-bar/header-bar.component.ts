@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { DISORDERS } from '../disorders'
+
 @Component({
     moduleId: module.id,
     selector: 'header-bar',
@@ -8,7 +10,8 @@ import { Component } from '@angular/core';
 })
 
 export class HeaderBar {
-    tab = "disorders"
+    tab = "disorders";
+    disorders = DISORDERS;
 
     setTab(tab: string): void {
         this.tab = tab;

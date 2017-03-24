@@ -9,9 +9,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var disorders_1 = require('../disorders');
 var HeaderBar = (function () {
     function HeaderBar() {
         this.tab = "disorders";
+        this.disorders = disorders_1.DISORDERS;
     }
     HeaderBar.prototype.setTab = function (tab) {
         this.tab = tab;

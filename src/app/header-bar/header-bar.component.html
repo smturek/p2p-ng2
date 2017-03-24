@@ -22,7 +22,7 @@
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Disorder #1</a></li>
+                        <li *ngFor="let disorder of disorders.adults"><a href="#">{{disorder.name}}</a></li>
                     </ul>
                 </div>
             </li>
@@ -33,10 +33,12 @@
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Disorder #1</a></li>
+                        <li *ngFor="let disorder of disorders.children"><a href="#">{{disorder.name}}</a></li>
                     </ul>
                 </div>
             </li>
         </ul>
     </div>
+
+    {{DISORDERS}}
 </div>

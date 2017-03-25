@@ -2,10 +2,18 @@
 exports.DISORDERS = {
     adults: [
         {
-            name: "ADHD"
+            name: "ADHD",
+            definition: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd/index.shtml",
+            treatments: [
+                {
+                    name: "Cognitive Behavior Therapy",
+                    href: "http://www.div12.org/psychological-treatments/treatments/cognitive-behavioral-therapy-for-adult-adhd/"
+                }
+            ]
         },
         {
-            name: "Anorexia"
+            name: "Anorexia",
+            definition: ""
         },
         {
             name: "Anxiety"

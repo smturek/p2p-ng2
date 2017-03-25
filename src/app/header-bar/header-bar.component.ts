@@ -11,18 +11,18 @@ import { DISORDERS } from '../disorders'
 
 export class HeaderBar {
     tab = "";
-    disorder = "";
+    disorder: {} = null;
     disorders = DISORDERS;
 
     setTab(tab: string): void {
         if (tab != 'disorders') {
-            this.disorder = "";
+            this.disorder = null;
         }
 
         this.tab = tab;
     }
 
-    setDisorder(disorder: string): void {
+    setDisorder(disorder: object): void {
         this.disorder = disorder;
     }
 }

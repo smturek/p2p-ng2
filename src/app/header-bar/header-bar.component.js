@@ -13,12 +13,12 @@ var disorders_1 = require('../disorders');
 var HeaderBar = (function () {
     function HeaderBar() {
         this.tab = "";
-        this.disorder = "";
+        this.disorder = null;
         this.disorders = disorders_1.DISORDERS;
     }
     HeaderBar.prototype.setTab = function (tab) {
         if (tab != 'disorders') {
-            this.disorder = "";
+            this.disorder = null;
         }
         this.tab = tab;
     };

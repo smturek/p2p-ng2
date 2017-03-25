@@ -1,6 +1,6 @@
-<div class="row">
+<div class="row header-border">
     <div class="col-md-3">
-        <h2>Parents to Parents</h2>
+        <img class="header-image" src="images/p2p.png">
     </div>
     <div class="col-md-5 col-md-offset-4">
         <ul class="nav-ul">
@@ -14,7 +14,12 @@
                 <a href="#" (click)="setTab('about')">About Us</a>
             </li>
         </ul>
-        <ul class="sub-nav" *ngIf="tab == 'disorders'">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3 col-md-offset-7 disorder-picker" *ngIf="tab == 'disorders'">
+        <ul class="sub-nav">
             <li>
                 <div class="dropdown">
                     <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -22,7 +27,9 @@
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li *ngFor="let disorder of disorders.adults"><a (click)="setDisorder(disorder.name)">{{disorder.name}}</a></li>
+                        <li *ngFor="let disorder of disorders.adults">
+                            <a (click)="setDisorder(disorder)">{{disorder.name}}</a>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -33,7 +40,9 @@
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li *ngFor="let disorder of disorders.children"><a (click)="setDisorder(disorder.name)">{{disorder.name}}</a></li>
+                        <li *ngFor="let disorder of disorders.children">
+                            <a (click)="setDisorder(disorder)">{{disorder.name}}</a>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -41,6 +50,19 @@
     </div>
 </div>
 
-<div class="row" *ngIf="disorder">
-    <h1>Disorder = {{disorder}}</h1>
+<div class="row page" *ngIf="disorder">
+    <div class="col-md-10 col-md-offset-2">
+        <h1 class="tab-title">{{disorder.name}}</h1>
+    </div>
+    <div class="col-md-10 col-md-offset-2">
+        <a href={{disorder.definition}}>Definition</a>
+    </div>
+    <div class="col-md-10 col-md-offset-2">
+        <h3>Treatments</h3>
+        <ul>
+            <li *ngFor="let treatment of disorder.treatments">
+                <a href={{treatment.href}}>{{treatment.name}}</a>
+            </li>
+        </ul>
+    </div>
 </div>

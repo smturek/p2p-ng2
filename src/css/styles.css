@@ -18,3 +18,22 @@
 .dropdown {
     display: inline-block;
 }
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.header-border {
+    border-bottom: solid 1px black;
+}
+
+.disorder-picker {
+    border-left: solid 1px black;
+}
+
+.page {
+    margin-left: 20px;
+}

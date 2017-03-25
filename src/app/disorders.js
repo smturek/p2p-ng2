@@ -13,90 +13,285 @@ exports.DISORDERS = {
         },
         {
             name: "Anorexia",
-            definition: ""
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Anxiety"
+            name: "Anxiety",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Borderline Personality"
+            name: "Borderline Personality",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Bi-Polar"
+            name: "Bi-Polar",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Bulimia"
+            name: "Bulimia",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Depression"
+            name: "Depression",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Disruptive Mood Dysregulation Disorder"
+            name: "Disruptive Mood Dysregulation Disorder",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Obsessive Compulsive Disorder"
+            name: "Obsessive Compulsive Disorder",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Post Traumatic Stress Disorder"
+            name: "Post Traumatic Stress Disorder",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Schizophrenia"
+            name: "Schizophrenia",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Seasonal Affective Disorder"
+            name: "Seasonal Affective Disorder",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Substance and Alchohol Use"
+            name: "Substance and Alchohol Use",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
     ],
     children: [
         {
-            name: "ADHD"
+            name: "ADHD",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Anorexia"
+            name: "Anorexia",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Anxiety"
+            name: "Anxiety",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Borderline Personality"
+            name: "Borderline Personality",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Bi-Polar"
+            name: "Bi-Polar",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Bulimia"
+            name: "Bulimia",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Depression"
+            name: "Depression",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Disruptive Mood Dysregulation Disorder"
+            name: "Disruptive Mood Dysregulation Disorder",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Obsessive Compulsive Disorder"
+            name: "Obsessive Compulsive Disorder",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Post Traumatic Stress Disorder"
+            name: "Post Traumatic Stress Disorder",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Schizophrenia"
+            name: "Schizophrenia",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Seasonal Affective Disorder"
+            name: "Seasonal Affective Disorder",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Selective Mutism"
+            name: "Selective Mutism",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Self Harm"
+            name: "Self Harm",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Substance and Alchohol Use"
+            name: "Substance and Alchohol Use",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
         {
-            name: "Tourettes"
+            name: "Tourettes",
+            definition: "",
+            treatments: [
+                {
+                    name: "",
+                    href: ""
+                }
+            ]
         },
     ]
 };

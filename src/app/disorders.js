@@ -9,7 +9,9 @@ exports.DISORDERS = {
                     name: "Cognitive Behavior Therapy",
                     href: "http://www.div12.org/psychological-treatments/treatments/cognitive-behavioral-therapy-for-adult-adhd/"
                 }
-            ]
+            ],
+            documentaries: [],
+            firstPersonAccounts: [],
         },
         {
             name: "Anorexia",

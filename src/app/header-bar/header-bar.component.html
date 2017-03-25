@@ -54,13 +54,33 @@
     <div class="col-md-10 col-md-offset-2">
         <h1 class="tab-title">{{disorder.name}}</h1>
     </div>
+
     <div class="col-md-10 col-md-offset-2">
         <a href={{disorder.definition}}>Definition</a>
     </div>
-    <div class="col-md-10 col-md-offset-2">
+
+    <div class="col-md-10 col-md-offset-2" *ngIf="disorder.treatments.length > 0">
         <h3>Treatments</h3>
         <ul>
             <li *ngFor="let treatment of disorder.treatments">
+                <a href={{treatment.href}}>{{treatment.name}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-md-10 col-md-offset-2" *ngIf="disorder.documentaries.length > 0">
+        <h3>Documentaries</h3>
+        <ul>
+            <li *ngFor="let documentary of disorder.documentaries">
+                <a href={{treatment.href}}>{{treatment.name}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-md-10 col-md-offset-2" *ngIf="disorder.firstPersonAccounts.length > 0">
+        <h3>First Person Accounts</h3>
+        <ul>
+            <li *ngFor="let account of disorder.firstPersonAccounts">
                 <a href={{treatment.href}}>{{treatment.name}}</a>
             </li>
         </ul>
